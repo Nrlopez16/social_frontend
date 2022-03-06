@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
+import {Navbar} from './components/index';
 
 const App = () => {
   return (
     <div id="App">
-      <h1>Hello, World</h1>
+        <Navbar />
     </div>
   );
 }

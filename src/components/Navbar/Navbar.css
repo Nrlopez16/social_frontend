@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald&display=swap');
+
+.main-container{
+    position: sticky;
+    top: 0;
+    background-color: rgb(165, 165, 165);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    align-items: center;
+    box-shadow: 0 1px 16px black;
+    font-family: 'Merriweather', serif;
+}
+
+.Title{
+    font-size: 2.4rem;
+    padding-left: 2rem;
+}
+
+.nav-links{
+    display: block;
+    transition: 0.2s ease-in-out;
+}
+
+.navlist{
+    display: flex;
+}
+
+.link,
+.signin-link{
+    position: relative;
+    color: inherit;
+    margin-right: 50px;
+    list-style: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    line-height: 16px;
+    transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+    color: rgb(0, 0, 0);
+}
+.link::before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #1275f7;
+    transform-origin: right-top;
+    transform: scale(0,1);
+    transition: color 0.1s, transform 0.2s ease-out;
+}
+.link:active::before{
+    background-color: #000;
+}
+.link:hover::before,
+.link:focus::before{
+    transform-origin: left-top;
+    transform: scale(1,1);
+}
