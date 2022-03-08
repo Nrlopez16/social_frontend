@@ -18,15 +18,14 @@
     font-family: 'Merriweather', serif;
 }
 .comment{
-    margin: 1rem;
-    margin-left: 4rem;
-    margin-right: 2rem;
-    background-color:rgb(236, 236, 234);
+    margin: 1rem 3rem 1rem 4rem;
+    background-color:rgb(207, 207, 204);
     border: 2px solid black;
     padding: 1rem;
     border-radius: 12px;
     box-shadow: 3px 2px 12px black;
     display: flex;
+    width: 70%;
 }
 
 .profilePicture{
@@ -36,7 +35,7 @@
 }
 .propic{
     border-radius: 175px;
-    width: 4%;
+    width: 5%;
     margin-right: 2.5rem;
 }
 

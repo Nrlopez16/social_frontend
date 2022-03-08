@@ -25,7 +25,11 @@ export async function getPosts() {
               "profilePic" : "https://randomuser.me/api/portraits/lego/5.jpg",
               "text" : "testing part 2",
               "comments" : [
-                  
+                {
+                    "username" : "treday",
+                    "profilePic" : "https://randomuser.me/api/portraits/lego/8.jpg",
+                    "text" : "Happy to be a part of this!"
+                    }
               ]
           },
           {
@@ -33,7 +37,16 @@ export async function getPosts() {
               "profilePic" : "https://randomuser.me/api/portraits/lego/0.jpg",
               "text" : "this is all meant to be replaced later",
               "comments" : [
-                  
+                {
+                    "username" : "treday",
+                    "profilePic" : "https://randomuser.me/api/portraits/lego/8.jpg",
+                    "text" : "Now I know why they codenamed us as Expendable!"
+                    },
+                {
+                    "username" : "nrlopez",
+                    "profilePic" : "https://randomuser.me/api/portraits/lego/5.jpg",
+                    "text" : "Now you're getting it"
+                    }
               ]
           }
       ]
