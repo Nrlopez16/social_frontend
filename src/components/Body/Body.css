@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald&display=swap');
 
+.homepage{
+    margin-top: 3rem;
+}
+.post{
+    margin-bottom: 2rem;
+}
+
 .postbody{
     margin: 1rem;
     background-color:rgb(236, 236, 234);
@@ -10,10 +17,26 @@
     display: flex;
     font-family: 'Merriweather', serif;
 }
+.comment{
+    margin: 1rem;
+    margin-left: 4rem;
+    margin-right: 2rem;
+    background-color:rgb(236, 236, 234);
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 3px 2px 12px black;
+    display: flex;
+}
 
 .profilePicture{
     border-radius: 175px;
     width: 5%;
+    margin-right: 2.5rem;
+}
+.propic{
+    border-radius: 175px;
+    width: 4%;
     margin-right: 2.5rem;
 }
 

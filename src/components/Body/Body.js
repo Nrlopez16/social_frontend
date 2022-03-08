@@ -20,13 +20,24 @@ function MainBody(){
 
     return (
         <div className="homepage">
-            {posted.map(({id, username, profilePic, text}) => (
-                <div key={ id } className="postbody"> 
+            {posted.map(({id, username, profilePic, text, comments}) => (
+                <div key={ id } className="post"> 
+                <div className="postbody">
                 <img className="profilePicture" src={profilePic} />
                 <div className="content">
                     <h2 className="username">{username}</h2>
                     <h3 className="text">{text}</h3>
                     </div>
+                </div>
+                {comments.map(({id, profilePic, text, username}) => (
+                    <div key={ id } className="comment"> 
+                    <img className="propic" src={profilePic}/>
+                    <div className="content">
+                        <h2 className="username">{username}</h2>
+                        <h3 className="text">{text}</h3>
+                        </div>
+                    </div>
+                ))}
                 </div>
             ))}
         </div>
